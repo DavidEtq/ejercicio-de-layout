@@ -1,0 +1,98 @@
+@mixin themesA {
+  %-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    margin-left: 50px;
+    padding: 8px;
+    width: 150px;
+  }
+  .box1 {
+    @extend %-box;
+    background-color: $RW1;
+    color: $Black;
+    font-size: 16px;
+  }
+  .box2 {
+    @extend %-box;
+    background-color: $RW2;
+    color: $Black;
+    font-size: 16px;
+  }
+  .box3 {
+    @extend %-box;
+    background-color: $RW3;
+    color: $Black;
+    font-size: 16px;
+  }
+  .box4 {
+    @extend %-box;
+    color: $Black;
+    font-size: 16px;
+    span {
+      font-style: italic;
+      font-weight: 700;
+      margin-top: 16px;
+    }
+  }
+  .box5 {
+    @extend %-box;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: -25px 14px 34px -14px rgba(0, 0, 0, 0.62);
+    color: $Black;
+    font-size: 16px;
+  }
+}
+
+@mixin themesB {
+  %-box {
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    margin-right: 50px;
+    padding: 8px;
+    width: 150px;
+  }
+  .box1 {
+    @extend %-box;
+    background-color: $POR1;
+    color: $Black;
+    font-size: 16px;
+  }
+  .box2 {
+    @extend %-box;
+    background-color: $POR2;
+    color: $Black;
+    font-size: 16px;
+  }
+  .box3 {
+    @extend %-box;
+    background-color: $POR3;
+    color: $Black;
+    font-size: 16px;
+  }
+  .box4 {
+    @extend %-box;
+    color: $Black;
+    font-size: 16px;
+    span {
+      font-style: italic;
+      font-weight: 700;
+      margin-top: 16px;
+    }
+  }
+  .box5 {
+    @extend %-box;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 10px 11px 18px 3px rgba(0, 0, 0, 0.58);
+    color: $Black;
+    font-size: 16px;
+  }
+}

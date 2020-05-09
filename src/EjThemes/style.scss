@@ -1,0 +1,22 @@
+@import "../colors/colors";
+@import "../Mixins/mixins";
+
+.container-grid {
+  display: flex;
+  justify-content: space-between;
+  .containerA {
+    h2 {
+      font-size: 12px;
+      margin: 0 auto;
+      padding: 8px 0;
+      width: 55%;
+    }
+    @include themesA();
+  }
+  .containerB {
+    h2 {
+      font-size: 12px;
+    }
+    @include themesB();
+  }
+}

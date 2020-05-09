@@ -1,0 +1,167 @@
+@import "../colors/colors";
+
+.container-1,
+.container-2,
+.container-3 {
+  background-color: red($color: #000000);
+  display: grid;
+  grid-template-columns: repeat(10, 80px);
+  grid-template-rows: repeat(1, 80px);
+  grid-gap: 10px;
+  padding-bottom: 8px;
+
+  .box {
+    align-items: center;
+    border-radius: 6px;
+    display: flex;
+    padding: 10px;
+    &:nth-of-type(5) {
+      grid-column-start: 5;
+      grid-column-end: 7;
+      justify-content: center;
+    }
+  }
+}
+
+$colorArrayBl: (
+  "1": (
+    $B1,
+    $G1,
+  ),
+  "2": (
+    $B2,
+    $G2,
+  ),
+  "3": (
+    $B3,
+    $G3,
+  ),
+  "4": (
+    $B4,
+    $G4,
+  ),
+  "5": (
+    $BaseB,
+    $White,
+  ),
+  "6": (
+    $B6,
+    $G6,
+  ),
+  "7": (
+    $B7,
+    $G7,
+  ),
+  "8": (
+    $B8,
+    $G8,
+  ),
+  "9": (
+    $B9,
+    $G9,
+  ),
+);
+
+$nSpriteBl: 0;
+@each $colorName, $colorValue in $colorArrayBl {
+  $nSpriteBl: $nSpriteBl + 1;
+  .sprite-blue-#{$colorName} {
+    background-color: nth($colorValue, 1);
+    color: nth($colorValue, 2);
+  }
+}
+
+$colorArrayOra: (
+  "1": (
+    $OR1,
+    $G1,
+  ),
+  "2": (
+    $OR2,
+    $G2,
+  ),
+  "3": (
+    $OR3,
+    $G3,
+  ),
+  "4": (
+    $OR4,
+    $G4,
+  ),
+  "5": (
+    $BaseOr,
+    $White,
+  ),
+  "6": (
+    $OR6,
+    $G6,
+  ),
+  "7": (
+    $OR7,
+    $G7,
+  ),
+  "8": (
+    $OR8,
+    $G8,
+  ),
+  "9": (
+    $OR9,
+    $G9,
+  ),
+);
+
+$nSpriteOra: 0;
+@each $colorName, $colorValue in $colorArrayOra {
+  $nSpriteOra: $nSpriteOra + 1;
+  .sprite-orange-#{$colorName} {
+    background-color: nth($colorValue, 1);
+    color: nth($colorValue, 2);
+  }
+}
+$colorArrayGr: (
+  "1": (
+    $GR1,
+    $G1,
+  ),
+  "2": (
+    $GR2,
+    $G2,
+  ),
+  "3": (
+    $GR3,
+    $G3,
+  ),
+  "4": (
+    $GR4,
+    $G4,
+  ),
+  "5": (
+    $BaseG,
+    $White,
+  ),
+  "6": (
+    $GR6,
+    $G6,
+  ),
+  "7": (
+    $GR7,
+    $G7,
+  ),
+  "8": (
+    $GR8,
+    $G8,
+  ),
+  "9": (
+    $GR9,
+    $G9,
+  ),
+);
+
+$nSpriteGr: 0;
+@each $colorName, $colorValue in $colorArrayGr {
+  $nSpriteGr: $nSpriteGr + 1;
+  .sprite-green-#{$colorName} {
+    background-color: nth($colorValue, 1);
+    color: nth($colorValue, 2);
+  }
+}

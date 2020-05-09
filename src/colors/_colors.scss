@@ -1,0 +1,49 @@
+$White: #fff;
+$Grey: #7b7979;
+$Black: #121212;
+$BaseB: #32a1f7;
+$BaseG: #b7db86;
+$BaseOr: #f6891e;
+$RW1: #c8175e;
+$RW2: #d65496;
+$RW3: #db6da5;
+$POR1: #8f7ae5;
+$POR2: #ddd7f7;
+$POR3: #b6a8ee;
+
+//Blue
+$B1: darken($BaseB, 40.5%);
+$B2: darken($BaseB, 35%);
+$B3: darken($BaseB, 30.5%);
+$B4: darken($BaseB, 25.5%);
+$B6: lighten($BaseB, 8%);
+$B7: lighten($BaseB, 15.5%);
+$B8: lighten($BaseB, 20.75%);
+$B9: lighten($BaseB, 26.5%);
+//Green
+$GR1: darken($BaseG, 40.5%);
+$GR2: darken($BaseG, 35%);
+$GR3: darken($BaseG, 30.5%);
+$GR4: darken($BaseG, 25.5%);
+$GR6: lighten($BaseG, 8%);
+$GR7: lighten($BaseG, 15.5%);
+$GR8: lighten($BaseG, 20.75%);
+$GR9: lighten($BaseG, 26.5%);
+//Orange
+$OR1: darken($BaseOr, 40.5%);
+$OR2: darken($BaseOr, 35%);
+$OR3: darken($BaseOr, 30.5%);
+$OR4: darken($BaseOr, 25.5%);
+$OR6: lighten($BaseOr, 8%);
+$OR7: lighten($BaseOr, 15.5%);
+$OR8: lighten($BaseOr, 20.75%);
+$OR9: lighten($BaseOr, 26.5%);
+//Grey
+$G1: darken($Grey, 35.5%);
+$G2: darken($Grey, 30%);
+$G3: darken($Grey, 25.5%);
+$G4: darken($Grey, 20.5%);
+$G6: lighten($Grey, 10%);
+$G7: lighten($Grey, 9.5%);
+$G8: lighten($Grey, 8%);
+$G9: lighten($Grey, 7.5%);
