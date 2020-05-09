@@ -1,0 +1,64 @@
+@import "../colors/colors";
+
+.container {
+  background-color: $Grey-light;
+  padding: 8px 16px;
+  width: 400px;
+  .card {
+    background-color: $White;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $G6;
+    width: 100%;
+    .cabe {
+      .post-image {
+        margin: 0;
+        img {
+          height: 300px;
+          width: 100%;
+        }
+      }
+    }
+    .content {
+      padding: 16px;
+      h2 {
+        margin: 0;
+      }
+    }
+    .foot {
+      padding: 8px 16px 32px;
+      .data {
+        display: flex;
+        justify-content: flex-end;
+        p {
+          font-size: 16px;
+          span {
+            color: $GR1;
+          }
+        }
+      }
+      .buttom {
+        display: flex;
+        background-color: $GR1;
+        cursor: pointer;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        &:hover {
+          background-color: $GR3;
+        }
+        a {
+          color: $White;
+          font-size: 16px;
+          padding: 16px;
+          text-align: center;
+          text-decoration: none;
+          width: 100%;
+          &:hover {
+            color: $Black;
+          }
+        }
+      }
+    }
+  }
+}
